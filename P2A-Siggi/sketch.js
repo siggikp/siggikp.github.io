@@ -11,6 +11,7 @@ function setup(){
 function draw(){
   background(180);
   ellipse(x, y, faceWidth, faceHeight);
+  ellipse (x, y, eyeSize)
 
   //.....kóði sem staðsetur augun m.v. x, y, faceWidth og faceHeight ætti að koma hér.
 
