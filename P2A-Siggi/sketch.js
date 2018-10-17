@@ -7,7 +7,8 @@ var nefHeight = 30;
 var nefWidth = 30;
 var augHeight = 40;
 var augWidth = 40;
-
+var aug2Width = 40;
+var aug2Height = 40;
 
 function setup(){
   createCanvas (300,300);
@@ -19,6 +20,7 @@ function draw(){
   fill(255)
   ellipse(x, y, nefHeight, nefWidth);
   ellipse(130, 120, augHeight, augWidth);
+  ellipse (180, 120, aug2Width, aug2Height);
 
   //.....kóði sem staðsetur augun m.v. x, y, faceWidth og faceHeight ætti að koma hér.
 
@@ -33,5 +35,7 @@ function mousePressed(){
   eyeSize    = random(10,  30);
   augHeight = random(30, 50);
   augWidth = random(30, 50);
+  aug2Height = random(30, 50);
+  aug2Width = random(30, 50);
 
 }
