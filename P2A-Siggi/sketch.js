@@ -14,7 +14,7 @@ var depill1 = 20;
 var depill2 = 20;
 var depill3 = 20;
 var munnur1 = 60;
-var munnur2 = 120;
+var munnur2 = 30;
 
 function setup(){
   createCanvas (300,300);
@@ -51,6 +51,6 @@ function mousePressed(){
   depill2 = random(10, 30);
   depill3 = random(10, 30);
   munnur1 = random(50, 70);
-  munnur2 = random(100, 130);
+  munnur2 = random(20, 40);
 
 }
