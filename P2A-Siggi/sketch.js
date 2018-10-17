@@ -24,13 +24,13 @@ function draw(){
   background(180);
   ellipse(x, y, faceWidth, faceHeight);
   fill(255)
+  rect(120, 180, munnur1, munnur2)
   ellipse(x, y, nefHeight, nefWidth);
   ellipse(130, 120, augHeight, augWidth);
   ellipse (180, 120, aug2Width, aug2Height);
   fill(0)
   ellipse (135, 125, depill, depill1);
   ellipse (185, 125, depill2, depill3);
-  rect(120, 180, munnur1, munnur2)
 
   //.....kóði sem staðsetur augun m.v. x, y, faceWidth og faceHeight ætti að koma hér.
 
