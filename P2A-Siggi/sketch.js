@@ -9,6 +9,8 @@ var augHeight = 40;
 var augWidth = 40;
 var aug2Width = 40;
 var aug2Height = 40;
+var depill = 20;
+var depill1 = 20;
 
 function setup(){
   createCanvas (300,300);
@@ -21,6 +23,8 @@ function draw(){
   ellipse(x, y, nefHeight, nefWidth);
   ellipse(130, 120, augHeight, augWidth);
   ellipse (180, 120, aug2Width, aug2Height);
+  fill(0)
+  ellipse (135, 125, depill, depill1);
 
   //.....kóði sem staðsetur augun m.v. x, y, faceWidth og faceHeight ætti að koma hér.
 
