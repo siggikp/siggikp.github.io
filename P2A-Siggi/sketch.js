@@ -1,6 +1,6 @@
-var eyeSize = 20;
 var faceWidth = 100;
 var faceHeight = 150;
+var eyeSize = 20;
 var x = 150;
 var y = 150;
 
@@ -21,4 +21,5 @@ function mousePressed(){
   faceWidth  = random(75,  150);
   faceHeight = random(100, 200);
   eyeSize    = random(10,  30);
+
 }
