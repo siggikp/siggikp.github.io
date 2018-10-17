@@ -18,7 +18,7 @@ function draw(){
   ellipse(x, y, faceWidth, faceHeight);
   fill(255)
   ellipse(x, y, nefHeight, nefWidth);
-  ellipse(x, y, augHeight, augWidth);
+  ellipse(0, 0, augHeight, augWidth);
 
   //.....kóði sem staðsetur augun m.v. x, y, faceWidth og faceHeight ætti að koma hér.
 
