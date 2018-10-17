@@ -1,10 +1,12 @@
 var faceWidth = 100;
 var faceHeight = 150;
 var eyeSize = 20;
-var auga1haed = 30;
-var auga1breidd = 30;
 var x = 150;
 var y = 150;
+var auga1haed = 30;
+var auga1breidd = 30;
+var x1 = 130;
+var y1 = 130;
 
 
 function setup(){
