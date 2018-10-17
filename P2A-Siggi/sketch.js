@@ -13,6 +13,8 @@ var depill = 20;
 var depill1 = 20;
 var depill2 = 20;
 var depill3 = 20;
+var munnur1 = 60;
+var munnur2 = 120;
 
 function setup(){
   createCanvas (300,300);
@@ -28,6 +30,7 @@ function draw(){
   fill(0)
   ellipse (135, 125, depill, depill1);
   ellipse (185, 125, depill2, depill3);
+  rect(120, 180, munnur1, munnur2)
 
   //.....kóði sem staðsetur augun m.v. x, y, faceWidth og faceHeight ætti að koma hér.
 
@@ -47,5 +50,7 @@ function mousePressed(){
   depill = random(10, 30);
   depill2 = random(10, 30);
   depill3 = random(10, 30);
+  munnur1 = random(50, 70);
+  munnur2 = random(100, 130);
 
 }
