@@ -41,5 +41,6 @@ function mousePressed(){
   augWidth = random(30, 50);
   aug2Height = random(30, 50);
   aug2Width = random(30, 50);
+  depill = random(10, 30)
 
 }
