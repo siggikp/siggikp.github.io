@@ -13,8 +13,13 @@ var depill = 20;
 var depill1 = 20;
 var depill2 = 20;
 var depill3 = 20;
-var munnur1 = 170;
+var munnur1 = 126;
 var munnur2 = 182;
+var munnur3 = 170;
+var munnur4 = 182;
+var munnur5 = 148;
+var munnur6 = 196;
+
 
 function setup(){
   createCanvas (300,300);
@@ -25,7 +30,7 @@ function draw(){
   fill(255, 244, 165)
   ellipse(x, y, faceWidth, faceHeight);
   fill(255)
-  triangle(126, 182, munnur1, munnur2, 148,196)
+  triangle(munnur1, munnur2, munnur3, munnur4, 148,196)
   ellipse(x, y, nefHeight, nefWidth);
   ellipse(130, 120, augHeight, augWidth);
   ellipse (180, 120, aug2Width, aug2Height);
@@ -39,6 +44,9 @@ function draw(){
 
 function mousePressed(){
   //Í hvert sinn sem músinni er smellt fá breyturnar ný gildi.
+  munnur1 = random(115, 130)
+  munnur3 = random(165, 175)
+  munnur5 = random(143, 155)
   faceWidth  = random(75,  150);
   faceHeight = random(100, 200);
   nefHeight = random(20, 30);
