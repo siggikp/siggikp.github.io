@@ -22,6 +22,7 @@ function setup(){
 
 function draw(){
   background(180);
+  fill(255, 244, 165)
   ellipse(x, y, faceWidth, faceHeight);
   fill(255)
   rect(120, 180, munnur1, munnur2)
