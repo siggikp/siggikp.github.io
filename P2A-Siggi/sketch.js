@@ -34,7 +34,7 @@ function draw(){
   ellipse(x, y, nefHeight, nefWidth);
   ellipse(130, 120, augHeight, augWidth);
   ellipse (180, 120, aug2Width, aug2Height);
-  fill(0)
+  fill(147, 255, 244)
   ellipse (135, 125, depill, depill1);
   ellipse (185, 125, depill2, depill3);
 
