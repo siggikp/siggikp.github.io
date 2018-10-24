@@ -28,6 +28,8 @@ function setup(){
 function draw(){
   background(180);
   fill(255, 244, 165)
+  arc(50, 50, 80, 80, 0, PI + QUARTER_PI, OPEN);
+  fill(255, 244, 165)
   ellipse(x, y, faceWidth, faceHeight);
   fill(255)
   triangle(munnur1, munnur2, munnur3, munnur4, 148,196)
