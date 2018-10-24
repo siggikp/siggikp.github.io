@@ -13,8 +13,8 @@ var depill = 20;
 var depill1 = 20;
 var depill2 = 20;
 var depill3 = 20;
-var munnur1 = 60;
-var munnur2 = 30;
+var munnur1 = 170;
+var munnur2 = 182;
 
 function setup(){
   createCanvas (300,300);
@@ -25,7 +25,7 @@ function draw(){
   fill(255, 244, 165)
   ellipse(x, y, faceWidth, faceHeight);
   fill(255)
-  rect(120, 180, munnur1, munnur2)
+  triangle(126, 182, munnur1, munnur2, 148,196)
   ellipse(x, y, nefHeight, nefWidth);
   ellipse(130, 120, augHeight, augWidth);
   ellipse (180, 120, aug2Width, aug2Height);
@@ -51,7 +51,6 @@ function mousePressed(){
   depill = random(10, 30);
   depill2 = random(10, 30);
   depill3 = random(10, 30);
-  munnur1 = random(50, 70);
-  munnur2 = random(20, 40);
+
 
 }
