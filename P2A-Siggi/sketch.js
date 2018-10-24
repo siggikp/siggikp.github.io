@@ -47,6 +47,7 @@ function mousePressed(){
   munnur1 = random(115, 130)
   munnur3 = random(165, 175)
   munnur5 = random(143, 155)
+  munnur6 = random(190, 200)
   faceWidth  = random(75,  150);
   faceHeight = random(100, 200);
   nefHeight = random(20, 30);
