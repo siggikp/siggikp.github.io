@@ -18,8 +18,8 @@ var munnur4 = 182;
 var munnur5 = 148;
 var munnur6 = 196;
 var nef1 = 40
-var litur = 255, 244, 165
-
+var litur = 255
+// húðliturinn: fill(255, 244, 165)
 
 function setup(){
   createCanvas (300,300);
@@ -27,7 +27,7 @@ function setup(){
 
 function draw(){
   background(180);
-  fill(litur)
+  fill(litur, litur, litur)
   ellipse(x, y, faceWidth, faceHeight);
   fill(255)
   triangle(munnur1, munnur2, munnur3, munnur4, 148,196)
@@ -36,7 +36,7 @@ function draw(){
   fill(147, 255, 244)
   ellipse (135, 125, depill, depill1);
   ellipse (185, 125, depill2, depill3);
-  fill(255, 244, 165)
+  fill(litur, litur, litur)
   arc(150, 155, 30, nef1, 30, PI + QUARTER_PI, OPEN);
 
   //.....kóði sem staðsetur augun m.v. x, y, faceWidth og faceHeight ætti að koma hér.
