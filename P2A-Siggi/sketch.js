@@ -28,7 +28,7 @@ function setup(){
 function draw(){
   background(180);
   fill(255, 244, 165)
-  arc(50, 50, 80, 80, 0, PI + QUARTER_PI, OPEN);
+  arc(150, 150, 80, 80, 0, PI + QUARTER_PI, OPEN);
   fill(255, 244, 165)
   ellipse(x, y, faceWidth, faceHeight);
   fill(255)
