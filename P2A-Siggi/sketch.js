@@ -18,6 +18,7 @@ var munnur4 = 182;
 var munnur5 = 148;
 var munnur6 = 196;
 var nef1 = 40
+var litur = 255, 244, 165
 
 
 function setup(){
@@ -26,7 +27,7 @@ function setup(){
 
 function draw(){
   background(180);
-  fill(255, 244, 165)
+  fill(litur)
   ellipse(x, y, faceWidth, faceHeight);
   fill(255)
   triangle(munnur1, munnur2, munnur3, munnur4, 148,196)
@@ -59,6 +60,7 @@ function mousePressed(){
   depill2 = random(10, 30);
   depill3 = random(10, 30);
   nef1 = random(30, 60);
+  litur = random(0, 255)
 
 
 }
