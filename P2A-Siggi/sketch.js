@@ -26,7 +26,6 @@ function setup(){
 function draw(){
   background(180);
   fill(255, 244, 165)
-  fill(255, 244, 165)
   ellipse(x, y, faceWidth, faceHeight);
   fill(255)
   triangle(munnur1, munnur2, munnur3, munnur4, 148,196)
@@ -35,7 +34,8 @@ function draw(){
   fill(147, 255, 244)
   ellipse (135, 125, depill, depill1);
   ellipse (185, 125, depill2, depill3);
-  arc(150, 150, 50, 50, 90, PI + QUARTER_PI, OPEN);
+  fill(255, 244, 165)
+  arc(150, 150, 50, 60, 90, PI + QUARTER_PI, OPEN);
 
   //.....kóði sem staðsetur augun m.v. x, y, faceWidth og faceHeight ætti að koma hér.
 
