@@ -17,8 +17,10 @@ var munnur3 = 170;
 var munnur4 = 182;
 var munnur5 = 148;
 var munnur6 = 196;
-var nef1 = 40
-var litur = 255
+var nef1 = 40;
+var litur = 255;
+var litur1 = 255;
+var litur2 = 255;
 // húðliturinn: fill(255, 244, 165)
 
 function setup(){
@@ -27,16 +29,16 @@ function setup(){
 
 function draw(){
   background(180);
-  fill(litur, litur, litur)
+  fill(litur, litur1, litur2);
   ellipse(x, y, faceWidth, faceHeight);
-  fill(255)
-  triangle(munnur1, munnur2, munnur3, munnur4, 148,196)
+  fill(255);
+  triangle(munnur1, munnur2, munnur3, munnur4, 148,196);
   ellipse(130, 120, augHeight, augWidth);
   ellipse (180, 120, aug2Width, aug2Height);
-  fill(147, 255, 244)
+  fill(147, 255, 244);
   ellipse (135, 125, depill, depill1);
   ellipse (185, 125, depill2, depill3);
-  fill(litur, litur, litur)
+  fill(litur, litur1, litur2);
   arc(150, 155, 30, nef1, 30, PI + QUARTER_PI, OPEN);
 
   //.....kóði sem staðsetur augun m.v. x, y, faceWidth og faceHeight ætti að koma hér.
@@ -45,10 +47,10 @@ function draw(){
 
 function mousePressed(){
   //Í hvert sinn sem músinni er smellt fá breyturnar ný gildi.
-  munnur1 = random(115, 130)
-  munnur3 = random(165, 175)
-  munnur5 = random(143, 155)
-  munnur6 = random(190, 200)
+  munnur1 = random(115, 130);
+  munnur3 = random(165, 175);
+  munnur5 = random(143, 155);
+  munnur6 = random(190, 200);
   faceWidth  = random(75,  150);
   faceHeight = random(100, 200);
   eyeSize    = random(10,  30);
@@ -60,7 +62,9 @@ function mousePressed(){
   depill2 = random(10, 30);
   depill3 = random(10, 30);
   nef1 = random(30, 60);
-  litur = random(0, 255)
+  litur = random(0, 255);
+  litur1 = random(0, 255);
+  litur2 = random(0, 255);
 
 
 }
