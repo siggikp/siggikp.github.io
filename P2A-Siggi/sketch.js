@@ -3,8 +3,6 @@ var faceHeight = 150;
 var eyeSize = 20;
 var x = 150;
 var y = 150;
-var nefHeight = 30;
-var nefWidth = 30;
 var augHeight = 40;
 var augWidth = 40;
 var aug2Width = 40;
@@ -28,17 +26,16 @@ function setup(){
 function draw(){
   background(180);
   fill(255, 244, 165)
-  arc(150, 150, 80, 80, 0, PI + QUARTER_PI, OPEN);
   fill(255, 244, 165)
   ellipse(x, y, faceWidth, faceHeight);
   fill(255)
   triangle(munnur1, munnur2, munnur3, munnur4, 148,196)
-  ellipse(x, y, nefHeight, nefWidth);
   ellipse(130, 120, augHeight, augWidth);
   ellipse (180, 120, aug2Width, aug2Height);
   fill(147, 255, 244)
   ellipse (135, 125, depill, depill1);
   ellipse (185, 125, depill2, depill3);
+  arc(150, 150, 80, 80, 0, PI + QUARTER_PI, OPEN);
 
   //.....kóði sem staðsetur augun m.v. x, y, faceWidth og faceHeight ætti að koma hér.
 
@@ -52,8 +49,6 @@ function mousePressed(){
   munnur6 = random(190, 200)
   faceWidth  = random(75,  150);
   faceHeight = random(100, 200);
-  nefHeight = random(20, 30);
-  nefWidth = random(20, 30);
   eyeSize    = random(10,  30);
   augHeight = random(30, 50);
   augWidth = random(30, 50);
