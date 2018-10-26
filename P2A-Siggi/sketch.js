@@ -17,6 +17,7 @@ var munnur3 = 170;
 var munnur4 = 182;
 var munnur5 = 148;
 var munnur6 = 196;
+var nef1 = 40
 
 
 function setup(){
@@ -35,7 +36,7 @@ function draw(){
   ellipse (135, 125, depill, depill1);
   ellipse (185, 125, depill2, depill3);
   fill(255, 244, 165)
-  arc(150, 155, 30, 40, 30, PI + QUARTER_PI, OPEN);
+  arc(150, 155, 30, nef1, 30, PI + QUARTER_PI, OPEN);
 
   //.....kóði sem staðsetur augun m.v. x, y, faceWidth og faceHeight ætti að koma hér.
 
@@ -57,6 +58,7 @@ function mousePressed(){
   depill = random(10, 30);
   depill2 = random(10, 30);
   depill3 = random(10, 30);
+  nef1 = random(30, 60);
 
 
 }
