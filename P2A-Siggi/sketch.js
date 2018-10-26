@@ -35,7 +35,7 @@ function draw(){
   ellipse (135, 125, depill, depill1);
   ellipse (185, 125, depill2, depill3);
   fill(255, 244, 165)
-  arc(150, 150, 50, 60, 90, PI + QUARTER_PI, OPEN);
+  arc(150, 150, 70, 60, 30, PI + QUARTER_PI, OPEN);
 
   //.....kóði sem staðsetur augun m.v. x, y, faceWidth og faceHeight ætti að koma hér.
 
