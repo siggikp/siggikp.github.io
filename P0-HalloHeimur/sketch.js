@@ -9,5 +9,6 @@ function setup(){
     text("Halló heimur",200,40);
     fill (255, 0, 0)
     rect(745, 197, 20, 60)
+    fill(66, 134, 244)
     triangle(558, 359, 482, 452, 842, 384)
 }
