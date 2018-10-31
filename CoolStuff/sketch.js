@@ -9,7 +9,6 @@ function setup() {
 }
 
 function draw(){
-  fill(random(0,360),75,100);
   for(var i = 0; i < 21 ; i = i + 1) {
     fill(random(0,360),75,100);
       for(var a = 0; a < 21 ; a = a + 1) {
