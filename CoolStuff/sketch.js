@@ -9,6 +9,6 @@ function setup() {
 function draw(){
   fill(random(0,360),75,100);
   for(var i = 0; i < 21 ; i = i + 1) {
-    ellipse(100, 50 + i*20, 15, 15);
+    ellipse(0, 0 + i*20, 15, 15);
   }
 }
