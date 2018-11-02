@@ -9,10 +9,10 @@ function setup() {
 }
 
 function draw(){
-  for(var i = 0; i < random(1, 21) ; i = i + 1) {
+  for(var i = 0; i < 21 ; i = i + 1) {
     fill(random(0,360),75,100);
     for(var a = 0; a < random(1, 21) ; a = a + 1) {
-      ellipse(10 + i*20, 10 + a*20, 15, 15);
+      ellipse(10 + i*random(1, 21), 10 + random(1, 21), 15, 15);
     }
   }
 }
