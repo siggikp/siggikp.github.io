@@ -5,7 +5,7 @@ function setup() {
   background(255, 215, 0);
   fill(0);
   colorMode(HSB);
-  frameRate(5);
+  frameRate(30);
 }
 
 function draw(){
