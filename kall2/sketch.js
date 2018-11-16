@@ -2,20 +2,36 @@ function setup() {
   createCanvas(400,400)
 }
 function draw(){
-  kall(50, 70)
+  kall(50, 70, 170, 150)
 }
-function kall(a, b){
+function kall(a, b, x, y){
+  background(255, 0, 0)
   fill(192,192,192)
-  rect(170, 150, a, b)
-  rect(178, 108, 37, 42)
-  rect(180, 160, a/2, b/2)
+  rect(x, y, a, b)
+  //+8 -42
+  rect(x + 8, y - 42, 37, 42)
+  //+10 +10
+  rect(x + 10, y + 10, a/2, b/2)
   fill(255, 255, 255)
-  rect(181, 163, a/2.5, b/10)
+  //+11 +13
+  rect(x + 11, y + 13, a/2.5, b/10)
   fill(255, 0, 0)
-  ellipse(190, 178, 20, 12)
-  line(170, 150, 170, 280 )
-  line(220, 150, 220, 280)
-  line(170, 150, 142, 110)
-  line(220, 150, 260, 178)
+  //+ 20, +28
+  ellipse(x + 20, y + 28, 20, 12)
+  //             +0 +130
+  line(x, y, x, y + 130)
+  //  + 50       +50, +90
+  line(x + 50, y, x + 50, y+ 90 )
+  //            -28   -40
+  line(x, y, x - 28, y - 40)
+  //   +50      +90  +28
+  line(x + 50, y, x + 90, y+28)
+  fill(0, 128, 0)
+  //       +15 -14   +37  -14 +26   -6
+  triangle(x+50, y-14, x+37, y-14, x-26, y-6)
+  //      +14  -30
+  ellipse(x+14, y-30, 10, 10)
+ //       +40  -30
+  ellipse(x+40, y-30, 10, 10)
 
 }
