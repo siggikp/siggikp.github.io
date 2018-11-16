@@ -1,22 +1,37 @@
-var stepSize = 10
+var x = 0;
+var y = 0;
+var xSpeed = 8;
+var ySpeed = 4;
+var hreyf = 0;
+var spadibreidd = 100;
+var spadiY = 400
 
 function setup() {
-  createCanvas(400,400);
-  background(255, 215, 0);
-  fill(0);
-  colorMode(HSB);
-  frameRate(15);
+  createCanvas(500,500);
 }
 
-function draw(){
-  background(255, 215, 0);
-  for(var i = 0; i < 21 ; i = i + 1) {
-    fill(random(0,360),75,100);
-    for(var a = 0; a < random(1, 21) ; a = a + 1) {
-      ellipse(10 + i*20, 10 + a*20, 15, 15);
-        for(var d = 0; d < 21 ; d = d + 1) {
-      rect(0 + i*20, 0 + d, 20, 20)
-      }
-    }
+function draw() {
+  background(255,200,0);
+  fill(236,36,94);
+  rect(hreyf, spadiY, spadibreidd, 30);
+  fill(236,36,94);
+  ellipse(x, y, 30, 30);
+  x = x + xSpeed;
+  y = y +ySpeed;
+  if ((x > width) || (x < 0)) {
+    xSpeed = xSpeed * -1;
+  }
+  hreyf = mouseX
+  if (hreyf > width - spadibreidd/2) {
+    hreyf = width - spadibreidd/2;
+  }
+  if ((y > height) || (y < 0)) {
+    ySpeed = ySpeed * -1;
+  }
+  spadibreidd = 100
+  spadiY = 400
+  hreyf = mouseX
+  if(abs(spadiY - y) < 30/2 + 30/2 && abs(hreyf - x) < 30/2 + 30/2){
+  ySpeed = ySpeed * -1;
   }
 }
