@@ -2,7 +2,7 @@ function setup() {
   createCanvas(400,400)
 }
 function draw(){
-  kall(50, 70, 170, 150)
+  kall(50, 70, mouseX, mouseY)
 }
 function kall(a, b, x, y){
   background(255, 0, 0)
@@ -28,7 +28,7 @@ function kall(a, b, x, y){
   line(x + 50, y, x + 90, y+28)
   fill(0, 128, 0)
   //       +15 -14   +37  -14 +26   -6
-  triangle(x+50, y-14, x+37, y-14, x-26, y-6)
+  triangle(x+12, y-13, x+60, y-14, x+4, y-6)
   //      +14  -30
   ellipse(x+14, y-30, 10, 10)
  //       +40  -30
