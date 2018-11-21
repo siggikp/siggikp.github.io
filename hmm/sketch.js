@@ -1,56 +1,74 @@
+
+var man1, man2;
+
+var k = 150
+var d = 13
+var j = 28
+
+function setup() {
+  createCanvas(1000,1000)
+  man1 = new bubbi(50, 70, random(400, 600), random(400, 600))
+  man2 = new bubbi(50, 70, random(400, 600), random(400, 600))
+
+}
+function mousePressed(){
+  man1.k = random(80, 200)
+  man2.k = random(80, 200)
+  man1.d = random(8, 15)
+  man2.d = random(8, 15)
+  man1.j = random(20, 35)
+  man2.j = random(20, 35)
+}
+function draw(){
+  background(255, 0, 0)
+  man1.move()
+  man1.show()
+  man2.move()
+  man2.show()
+ print(man1.x);
+}
 class bubbi {
   constructor(a, b, x, y){
     this.a = a
     this.b = b
     this.x = x
     this.y = y
+    this.k = k
+    this.d = d
+    this.j = j
   }
-
-  var k = 150
-  var d = 13
-  var j = 28
-
-  function setup() {
-    createCanvas(500,500)
-  }
-  function draw(){
-    kall(50, 70, 100, 100)
+  move(){
+    this.x = this.x + random(-5,5);
+    this.y = this.y + random(-5,5);
   }
   show(){
-    function kall(a, b, x, y){
-      background(255, 0, 0)
       fill(192,192,192)
-      rect(x, y, a, b)
+      rect(this.x, this.y, this.a, this.b)
       //+8 -42
-      rect(x + 8, y - 42, 37, 42)
+      rect(this.x + 8, this.y - 42, 37, 42)
       //+10 +10
-      rect(x + 10, y + 10, a/2, b/2)
+      rect(this.x + 10, this.y + 10, this.a/2, this.b/2)
       fill(255, 255, 255)
       //+11 +13
-      rect(x + 11, y + d, a/2.5, b/10)
+      rect(this.x + 11, this.y + this.d, this.a/2.5, this.b/10)
       fill(255, 0, 0)
       //+ 20, +28
-      ellipse(x + 20, y + j, 20, 12)
+      ellipse(this.x + 20, this.y + this.j, 20, 12)
       //             +0 +130
-      line(x, y, x, y + 130)
+      line(this.x, this.y, this.x, this.y + 130)
       //  + 50       +50, +90
-      line(x + 50, y, x + 50, y + k )
+      line(this.x + 50, this.y, this.x + 50, this.y + this.k )
       //            -28   -40
-      line(x, y, x - 28, y - 40)
+      line(this.x, this.y, this.x - 28, this.y - 40)
       //   +50      +90  +28
-      line(x + 50, y, x + 90, y+28)
+      line(this.x + 50, this.y, this.x + 90, this.y+28)
       fill(0, 128, 0)
       //       +15 -14   +37  -14 +26   -6
-      triangle(x+12, y-13, x+60, y-14, x+4, y-6)
+      triangle(this.x+12, this.y-13, this.x+60, this.y-14, this.x+4, this.y-6)
       //      +14  -30
-      ellipse(x+14, y-30, 10, 10)
+      ellipse(this.x+14, this.y-30, 10, 10)
       //       +40  -30
-      ellipse(x+40, y-30, 10, 10)
-    }
-    function mousePressed(){
-      k = random(80, 200)
-      d = random(8, 15)
-      j = random(20, 35)
+      ellipse(this.x+40, this.y-30, 10, 10)
     }
 
 
