@@ -11,10 +11,10 @@ class bubbi {
   var j = 28
 
   function setup() {
-    createCanvas(400,400)
+    createCanvas(500,500)
   }
   function draw(){
-    kall(50, 70, mouseX, mouseY)
+    kall(50, 70, 100, 100)
   }
   show(){
     function kall(a, b, x, y){
