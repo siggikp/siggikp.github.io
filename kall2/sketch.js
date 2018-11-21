@@ -1,3 +1,7 @@
+var k = 150
+var d = 13
+var j = 28
+
 function setup() {
   createCanvas(400,400)
 }
@@ -14,14 +18,14 @@ function kall(a, b, x, y){
   rect(x + 10, y + 10, a/2, b/2)
   fill(255, 255, 255)
   //+11 +13
-  rect(x + 11, y + 13, a/2.5, b/10)
+  rect(x + 11, y + d, a/2.5, b/10)
   fill(255, 0, 0)
   //+ 20, +28
-  ellipse(x + 20, y + 28, 20, 12)
+  ellipse(x + 20, y + j, 20, 12)
   //             +0 +130
   line(x, y, x, y + 130)
   //  + 50       +50, +90
-  line(x + 50, y, x + 50, y+ 90 )
+  line(x + 50, y, x + 50, y + k )
   //            -28   -40
   line(x, y, x - 28, y - 40)
   //   +50      +90  +28
@@ -33,5 +37,11 @@ function kall(a, b, x, y){
   ellipse(x+14, y-30, 10, 10)
  //       +40  -30
   ellipse(x+40, y-30, 10, 10)
+}
+function mousePressed(){
+  k = random(80, 200)
+  d = random(8, 15)
+  j = random(20, 35)
+
 
 }
